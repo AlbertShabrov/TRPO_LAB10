@@ -21,7 +21,7 @@ void MainWindow::on_pushButton_clicked()
 {
     QMessageBox::StandardButton reply = QMessageBox::question(this, "Заголовок", "Вы точно хотите выйти?",
                                                               QMessageBox::Yes | QMessageBox::No);
-    if(reply==QMessageBox::No)
+    if(reply==QMessageBox::Yes)
     {
         QApplication::quit();
     }
